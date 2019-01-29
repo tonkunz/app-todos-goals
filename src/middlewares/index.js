@@ -1,5 +1,5 @@
 //External dependences
-import { apllyMidleware } from 'redux'
+import { applyMiddleware } from 'redux'
 
 //External middleware
 import thunk from 'redux-thunk'
@@ -8,7 +8,7 @@ import thunk from 'redux-thunk'
 import checker from './checker'
 import logger from './logger'
 
-export default apllyMidleware(
+export default applyMiddleware(
   thunk,
   checker,
   logger
